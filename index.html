@@ -3,374 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Avicave Infosolutions connects top talent with opportunities through tailored staffing solutions.">
-    <title>Avicave Staffing Solutions</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <title>Avicave - Talent Recruitment Agency</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <img src="images/Avicave_logo_new.png" alt="Avicave Infosolutions Logo" class="h-16 w-auto hover:transform hover:scale-105 transition-transform duration-300 drop-shadow-lg">
-                </div>
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#clients" class="text-gray-700 hover:text-blue-600">Clients</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
-                    <a href="job_application.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Register Now</a>
-                </div>
-                <!-- Mobile menu button -->
-                <button class="md:hidden text-gray-700 hover:text-blue-600" id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button> 
+    <header>
+        <nav class="navbar">
+            <div class="logo">AVICAVE</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#clients">CLIENTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
             </div>
-            <!-- Mobile Menu -->
-            <div class="md:hidden hidden" id="mobile-menu">
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Home</a>
-                    <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Services</a>
-                    <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">About</a>
-                    <a href="#clients" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Clients</a>
-                    <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md">Contact</a>
-                    <a href="job_application.html" class="block px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">Register Now</a>
-                </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-24 bg-blue-50">
-        <div class="max-w-6xl mx-auto px-4 py-16">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
-                    Connecting Top Talent with Opportunity
-                </h1>
-                <p class="text-xl text-gray-600 mb-8">
-                    Professional staffing solutions tailored to your business needs
-                </p>
-                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
-                    Get Started
-                </a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Talent Fast</h1>
+            <p>Connecting exceptional talent with inspiring companies</p>
+            <a href="#contact" class="cta-button">GET IN TOUCH</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>ABOUT AVICAVE</h2>
+                <p class="subtitle">Trusted by leading companies worldwide</p>
+                <p>Avicave is committed to revolutionizing the recruitment industry by prioritizing quality matches and fostering long-lasting professional relationships. Our approach combines expertise, innovation, and personalized service to deliver exceptional results.</p>
+                <p>With a focus on integrity and excellence, we strive to exceed expectations and create a positive impact on the careers of individuals and the success of businesses. Our mission is to be the bridge that connects talent with opportunity, transforming lives and organizations.</p>
+                <a href="#contact" class="learn-more">Learn More</a>
+            </div>
+            <div class="about-video-container"> 
+                <video class="about-video w-full" controls>
+                    <source src="assets/videos/Avicave_intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Permanent Placement</h3>
-                    <p class="text-gray-600">Find the perfect long-term fit for your organization with our comprehensive recruitment process.</p>
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2>OUR SERVICES</h2>
+            <p class="section-intro">We deliver tailored recruitment solutions with unparalleled commitment to quality and results.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Contract Staffing</h3>
-                    <p class="text-gray-600">Flexible staffing solutions for project-based needs and temporary workforce requirements.</p>
+                <h3>TALENT SEARCH</h3>
+                <p>We identify and attract high-caliber candidates through our extensive network and advanced search methodologies.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Executive Search</h3>
-                    <p class="text-gray-600">Strategic recruitment of senior-level professionals and executive leadership.</p>
+                <h3>EXECUTIVE RECRUITMENT</h3>
+                <p>Our specialized approach to executive search ensures organizations find transformative leaders who drive success.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Payroll Management</h3>
-                    <p class="text-gray-600">Comprehensive payroll services including processing, tax compliance, and employee benefits administration.</p>
+                <h3>CAREER CONSULTING</h3>
+                <p>We provide personalized guidance to help professionals navigate their career paths with clarity and confidence.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
                 </div>
+                <h3>MARKET INSIGHTS</h3>
+                <p>Our industry analysis and salary benchmarking help clients make informed decisions in a competitive market.</p>
             </div>
         </div>
     </section>
 
-    <!-- Industries Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
+    <section class="expertise-section">
+        <div class="expertise-overlay">
+            <div class="expertise-content">
+                <h2>INDUSTRY EXPERTISE</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <h3>TECHNOLOGY</h3>
+                        <p>Connecting innovators with cutting-edge companies that push boundaries.</p>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">IT & Software</h3>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+                    <div class="expertise-item">
+                        <h3>HEALTHCARE</h3>
+                        <p>Placing dedicated professionals who are passionate about patient care.</p>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Banking & Finance</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                        </svg>
+                    <div class="expertise-item">
+                        <h3>FINANCE</h3>
+                        <p>Matching skilled professionals with organizations requiring strategic expertise.</p>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Manufacturing</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                        </svg>
+                    <div class="expertise-item">
+                        <h3>MARKETING</h3>
+                        <p>Finding creative talents who can elevate brand presence and engagement.</p>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">E-commerce</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Healthcare</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Telecom</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Legal Services</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Education</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Real Estate</h3>
-                </div>
-
-                <div class="text-center">
-                    <div class="bg-white p-6 rounded-full shadow-lg inline-block mb-4 hover:bg-blue-50 transition-colors duration-300">
-                        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Energy</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Avicave</h2>
-            <!-- Video and Core Values -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-                <div class="order-1"> <!-- Changed order-2 md:order-1 to just order-1 -->
-                    <h3 class="text-2xl font-bold mb-6">Our Core Values</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Industry Expertise</span>
-                        </li>
-                        <li class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Personalized Service</span>
-                        </li>
-                        <li class="flex items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Proven Track Record</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="order-2"> <!-- Changed order-1 md:order-2 to just order-2 -->
-                    <video class="rounded-lg shadow-lg w-full" controls>
-                        <source src="videos/Avicave_intro.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+
+    <section id="clients" class="clients-section">
+        <div class="section-header">
+            <h2>OUR CLIENTS</h2>
+            <p class="section-intro">Trusted by leading companies across industries</p>
         </div>
-    </section>
-    <!-- Client Carousel Section -->
-    <section id="clients" class="py-16 bg-gradient-to-r from-blue-50 to-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Trusted Clients</h2>
-            <div class="carousel-container relative overflow-hidden">
-                <div class="client-carousel flex transition-transform duration-500 ease-in-out">
-                    <!-- Original slides will be cloned via JavaScript -->
-                    <!-- Add your client logos here -->
-                    <div class="min-w-[200px] px-4">
-                        <img src="images/amazon_logo.png" alt="Client 1" class="h-16 w-32 object-contain mx-auto grayscale hover:grayscale-0 transition-all">
+        
+        <div class="client-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="client-logo">
+                        <img src="assets/clients_Logo/hdfc_icon.jpg" alt="HDFC bank">
+                        <p>HDFC Bank</p>
                     </div>
-                    <div class="min-w-[200px] px-4">
-                        <img src="images/hdfc_icon.jpg" alt="Client 2" class="h-16 w-32 object-contain mx-auto grayscale hover:grayscale-0 transition-all">
+                    <div class="client-logo">
+                        <img src="assets/clients_Logo/IBA-LOGO.jpg" alt="IBA-LOGO">
+                        <p>Indus Business Academy</p>
                     </div>
-                    <div class="min-w-[200px] px-4">
-                        <img src="images/KIA_logo.jpg" alt="Client 3" class="h-16 w-32 object-contain mx-auto grayscale hover:grayscale-0 transition-all">
+                    <div class="client-logo">
+                        <img src="assets/clients_Logo/KIA_logo.jpg" alt="KIA-LOGO">
+                        <p>KIA Motors</p>
                     </div>
-                    <div class="min-w-[200px] px-4">
-                        <img src="images/Pump_house.png" alt="Client 4" class="h-16 w-32 object-contain mx-auto grayscale hover:grayscale-0 transition-all">
+                    <div class="client-logo">
+                        <img src="assets/clients_Logo/mahindra.jpg" alt="mahindra-LOGO">
+                        <p>Mahindra & Mahindra</p>
                     </div>
-                    <div class="min-w-[200px] px-4">
-                        <img src="images/mahindra.jpg" alt="Client 5" class="h-16 w-32 object-contain mx-auto grayscale hover:grayscale-0 transition-all">
+                    <div class="client-logo">
+                        <img src="assets/clients_Logo/nexa-vector-logo.png" alt="NEXA-LOGO">
+                        <p>NEXA</p>
+                    </div>
+                    <div class="client-logo">
+                        <img src="assets/clients_Logo/Pump_house.jpg" alt="Pump_house-LOGO">
+                        <p>Pump House</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Our Approach Section (moved here) -->
-    <section class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h3 class="text-2xl font-bold text-center mb-8">Our Approach</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-1 transition-transform duration-300">
-                    <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                    </svg>
-                    <h4 class="text-xl font-bold mb-4">Strategic Talent Matching</h4>
-                    <p class="text-gray-600">We don't just fill positions, we create strategic talent alignments that drive business growth.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-1 transition-transform duration-300">
-                    <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                    </svg>
-                    <h4 class="text-xl font-bold mb-4">Quality Assurance</h4>
-                    <p class="text-gray-600">Rigorous screening and continuous performance evaluation ensure top-tier talent.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-1 transition-transform duration-300">
-                    <svg class="w-16 h-16 text-blue-600 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                    </svg>
-                    <h4 class="text-xl font-bold mb-4">Tailored Solutions</h4>
-                    <p class="text-gray-600">Custom staffing strategies designed to meet your unique organizational needs.</p>
-                </div>
+            <div class="carousel-arrows">
+                <button class="carousel-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-arrow next"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
 
-    <!-- Consultation Request Modal -->
-    <div id="consultationModal" class="modal">
-        <div class="modal-content">
-            <span id="closeModal" class="float-right text-2xl cursor-pointer">&times;</span>
-            <h2 class="text-2xl font-bold mb-6 text-center">Request a Consultation</h2>
-            <form id="consultationForm" class="space-y-4">
-                <div>
-                    <label class="block text-gray-700 mb-2">Company Name</label>
-                    <input type="text" class="w-full p-2 border border-gray-300 rounded-lg" required>
-                </div>
-                <div>
-                    <label class="block text-gray-700 mb-2">Your Name</label>
-                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-lg" required>
-                </div>
-                <div>
-                    <label class="block text-gray-700 mb-2">Contact Email</label>
-                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-lg" required>
-                </div>
-                <div>
-                    <label class="block text-gray-700 mb-2">Contact Phone</label>
-                    <input type="tel" id="phone" class="w-full p-2 border border-gray-300 rounded-lg">
-                </div>
-                <div>
-                    <label class="block text-gray-700 mb-2">Staffing Needs</label>
-                    <select class="w-full p-2 border border-gray-300 rounded-lg">
-                        <option value="permanent">Permanent Placement</option>
-                        <option value="contract">Contract Staffing</option>
-                        <option value="executive">Executive Search</option>
-                        <option value="payroll">Payroll Management</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-gray-700 mb-2">Estimated Team Size</label>
-                    <select class="w-full p-2 border border-gray-300 rounded-lg">
-                        <option value="1-5">1-5 Employees</option>
-                        <option value="6-20">6-20 Employees</option>
-                        <option value="21-50">21-50 Employees</option>
-                        <option value="50+">50+ Employees</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-gray-700 mb-2">Additional Details</label>
-                    <textarea class="w-full p-2 border border-gray-300 rounded-lg" rows="3" placeholder="Tell us more about your staffing requirements"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
-                    Submit Consultation Request
-                </button>
-            </form>
+    <section id="clients" class="testimonials-section">
+        <div class="section-header">
+            <h2>TESTIMONIALS</h2>
+            <p class="section-intro">Hear what our clients have to say about their experience with Avicave.</p>
         </div>
-    </div>
-
-    <!-- Add "Request Consultation" buttons throughout the site -->
-    <div class="fixed bottom-8 right-8 z-50">
-        <button id="openConsultationModal" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 flex items-center">
-            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
-            </svg>
-            Request Consultation
-        </button>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center"> <!-- Added text-center -->
-                    <h3 class="text-xl font-bold mb-4">Avicave Infosolutions Pvt Ltd</h3>
-                    <p class="text-gray-400">Connecting the right people with the right opportunities.</p>
+        
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <div class="testimonial-quote">"Avicave transformed our hiring process. Their understanding of our needs and the quality of candidates they presented exceeded our expectations."</div>
+                <div class="testimonial-author">
+                    <h4>Robert Chen</h4>
+                    <p>Chief Technology Officer, InnovateTech</p>
                 </div>
-                <div class="text-center"> <!-- Added text-center -->
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p class="text-gray-400">Email: businesshead@avicave.in</p>
-                    <p class="text-gray-400">Phone: +91 9611038652</p>
-                </div>
-                <div class="text-center"> <!-- Added text-center -->
-                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-                    <div class="flex justify-center space-x-4"> <!-- Added justify-center -->
-                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
-                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>1,200+</h3>
+                <p>Successful Placements</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Client Satisfaction</p>
+            </div>
+            <div class="stat-item">
+                <h3>250+</h3>
+                <p>Client Companies</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="faq" class="faq-section">
+        <h1>FAQS</h1>
+        <p class="faq-intro">Find answers to common questions about Avicave, your trusted talent recruitment agency.</p>
+        
+        <div class="faq-table">
+            <div class="faq-row">
+                <div class="faq-question">How do I apply for a job?</div>
+                <div class="faq-answer">To apply for a job, simply browse our current job listings, select a position that matches your skills and qualifications, and follow the application instructions provided. Make sure to submit all required documents for consideration.</div>
+            </div>
+            <div class="faq-row">
+                <div class="faq-question">What type of candidates do you recruit?</div>
+                <div class="faq-answer">We specialize in recruiting a diverse range of talented individuals across various industries, including IT, finance, marketing, and more. Our focus is on matching top-tier candidates with leading companies seeking exceptional talent.</div>
+            </div>
+            <div class="faq-row">
+                <div class="faq-question">How long does the recruitment process take?</div>
+                <div class="faq-answer">The recruitment process timeline varies depending on the position and client requirements. We strive to ensure a thorough selection process that matches the right candidate with the right opportunity. Our goal is to facilitate a seamless recruitment experience for both candidates and clients.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>GET IN TOUCH</h2>
+                <p class="contact-intro">Ready to elevate your recruitment process or find your next opportunity? Contact us today.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9611038652</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@avicave.in</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>#13, 29th 'A' Main Rd, BTM 1st Stage,<br>Bengaluru - 560068</p>
                     </div>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                <p>&copy; 2025 Avicave. All rights reserved.</p>
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">AVICAVE</div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span class="divider">|</span>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Avicave Infosolutions Pvt Ltd. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
