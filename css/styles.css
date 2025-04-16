@@ -10,11 +10,117 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fff;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
+}
+
+/* Typography Styles */
+.section-header h2,
+.about-text h2,
+.expertise-content h2,
+.contact-info h2,
+.application-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.section-intro,
+.about-text p,
+.service-card p,
+.expertise-item p,
+.testimonial-quote,
+.contact-intro,
+.faq-answer,
+.job-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.nav-links a,
+.cta-button,
+.learn-more,
+.submit-button,
+.job-tag,
+.apply-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.service-card h3,
+.expertise-item h3,
+.testimonial-author h4,
+.contact-item h3,
+.job-title-location h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.footer-logo {
+    font-family: 'Playserrat', serif;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.salary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.location {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* Update specific text sizes */
+.nav-links a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.section-intro {
+    font-size: 1.1rem;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.contact-item h3 {
+    text-transform: none;
+}
+
+.submit-button,
+.cta-button {
+    text-transform: none;
+    font-weight: 500;
 }
 
 /* Navigation */
@@ -152,27 +258,71 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
 .cta-button {
     display: inline-block;
-    padding: 0.7rem 1.5rem;
+    padding: 1rem 2.5rem;
     background-color: transparent;
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    min-width: 180px;
+    text-align: center;
 }
 
 .cta-button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+/* Primary button with gold theme */
+.cta-button:first-child {
+    background-color: #c4a747;
+    border-color: #c4a747;
+}
+
+.cta-button:first-child:hover {
+    background-color: #b3963a;
+    border-color: #b3963a;
+    color: #fff;
+}
+
+.cta-button.secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-button.secondary:hover {
+    background-color: #c4a747;
+    border-color: #c4a747;
     color: #fff;
 }
 
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 10vw;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+        min-width: 160px;
     }
 }
 
@@ -565,6 +715,154 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+/* Jobs Section */
+.jobs-section {
+    padding: 8rem 10%;
+    background-color: #fff;
+}
+
+.jobs-section .section-header {
+    margin-bottom: 4rem;
+}
+
+.jobs-section .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jobs-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.jobs-section .highlight {
+    color: #c4a747;
+}
+
+.view-all {
+    color: #c4a747;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.view-all:hover {
+    color: #333;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.job-title-location h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.job-tag {
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.job-tag.executive { background-color: #e3f2fd; color: #1976d2; }
+.job-tag.tech { background-color: #e8f5e9; color: #2e7d32; }
+.job-tag.marketing { background-color: #fff3e0; color: #f57c00; }
+.job-tag.healthcare { background-color: #f3e5f5; color: #7b1fa2; }
+
+.job-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salary {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.apply-btn {
+    color: #c4a747;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.apply-btn:hover {
+    color: #333;
+}
+
+@media (max-width: 992px) {
+    .jobs-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobs-section .header-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .job-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .job-tag {
+        align-self: flex-start;
+    }
+}
+
 /* FAQ Section */
 .faq-section {
     padding: 5rem 10%; /* Reduced padding slightly for visual balance */
@@ -634,160 +932,193 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact-section {
     padding: 8rem 5%;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    max-width: 1400px;
+    gap: 6rem;
+    max-width: 1200px;
     margin: 0 auto;
-    align-items: start;
 }
 
 .contact-info h2 {
     color: #333;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.contact-info .highlight {
+    color: #c4a747;
 }
 
 .contact-intro {
-    margin-bottom: 3rem;
     color: #666;
     font-size: 1.1rem;
     line-height: 1.8;
+    margin-bottom: 3rem;
+    max-width: 90%;
 }
 
 .contact-details {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
+    gap: 1.5rem;
 }
 
-.contact-item i {
-    width: 30px;
+.contact-item .icon {
     color: #c4a747;
-    font-size: 1.2rem;
-    margin-right: 1rem;
+    font-size: 1.4rem;
+    flex-shrink: 0;
 }
 
-.contact-item p {
-    color: #555;
-    line-height: 1.6;
-}
-
-.contact-social {
-    display: flex;
-    gap: 2rem;
-}
-
-.contact-social a {
+.contact-item .info h3 {
     color: #333;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-.contact-social a:hover {
-    color: #c4a747;
+.contact-item .info p {
+    color: #666;
+    line-height: 1.6;
 }
 
 .contact-form-container {
     background-color: #fff;
-    padding: 2.5rem;
+    padding: 0;
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.contact-form .form-group {
-    margin-bottom: 1.5rem;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    margin: 0;
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     width: 100%;
     padding: 1rem;
     border: 1px solid #ddd;
+    border-radius: 4px;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
-    transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #c4a747;
-    outline: none;
+    color: #333;
+    transition: all 0.3s ease;
+    background-color: #fff;
 }
 
 .contact-form textarea {
-    height: 180px;
+    height: 150px;
     resize: vertical;
 }
 
-.submit-button {
-    display: inline-block;
-    padding: 1rem 2.5rem;
+.contact-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #c4a747;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(196, 167, 71, 0.1);
+}
+
+.contact-form .submit-button {
     background-color: #c4a747;
     color: #fff;
+    padding: 1rem;
     border: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 0.5rem;
 }
 
-.submit-button:hover {
-    background-color: #333;
+.contact-form .submit-button:hover {
+    background-color: #b3963a;
 }
 
-/* Ensure the responsive rule still applies correctly */
 @media (max-width: 992px) {
     .contact-grid {
-        grid-template-columns: 1fr; /* This remains correct for stacking */
-        gap: 4rem; /* Keep consistent gap */
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .contact-intro {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-section {
+        padding: 4rem 5%;
+    }
+
+    .contact-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-item {
+        gap: 1rem;
     }
 }
 
 /* Footer */
 footer {
-    background-color: #fff;
+    background-color: #333;
+    color: #fff;
     padding: 3rem 5%;
-    border-top: 1px solid #eee;
+    margin-top: 4rem;
 }
 
 .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 2rem;
 }
 
 .footer-logo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #333;
-    margin-bottom: 1.5rem;
+    color: #fff;
     letter-spacing: 2px;
 }
 
 .footer-social {
     display: flex;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+    gap: 1.5rem;
 }
 
 .footer-social a {
-    color: #333;
+    color: #fff;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
@@ -797,13 +1128,16 @@ footer {
 }
 
 .footer-links {
-    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .footer-links a {
-    color: #555;
+    color: #fff;
     text-decoration: none;
     font-size: 0.9rem;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -812,13 +1146,15 @@ footer {
 }
 
 .divider {
-    margin: 0 1rem;
-    color: #ddd;
+    color: #fff;
+    opacity: 0.5;
 }
 
 .copyright {
-    color: #999;
     font-size: 0.9rem;
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
 }
 
 /* Responsive Design */
@@ -941,6 +1277,179 @@ footer {
     }
     
     .contact-form-container {
+        padding: 2rem;
+    }
+}
+
+/* Application Section */
+.application-section {
+    padding: 8rem 5%;
+    background-color: #f9f9f9;
+}
+
+.application-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: #c4a747;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-card h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.application-form {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-section {
+    margin-bottom: 3rem;
+}
+
+.form-section h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #c4a747;
+    outline: none;
+}
+
+.file-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px dashed #c4a747;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: rgba(196, 167, 71, 0.1);
+}
+
+.file-label input[type="file"] {
+    display: none;
+}
+
+.privacy-notice {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+}
+
+.privacy-notice h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.privacy-notice ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.privacy-notice li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.privacy-notice li:before {
+    content: "•";
+    color: #c4a747;
+    position: absolute;
+    left: 0;
+}
+
+.consent-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.consent-checkbox input[type="checkbox"] {
+    margin-top: 0.3rem;
+}
+
+.consent-checkbox label {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .application-form {
         padding: 2rem;
     }
 }
