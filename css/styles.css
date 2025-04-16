@@ -1283,8 +1283,8 @@ footer {
 
 /* Application Section */
 .application-section {
-    padding: 8rem 5%;
-    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
 }
 
 .application-container {
@@ -1292,76 +1292,46 @@ footer {
     margin: 0 auto;
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 4rem 0;
-}
-
-.benefit-card {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.benefit-card i {
-    font-size: 2.5rem;
-    color: #c4a747;
-    margin-bottom: 1.5rem;
-}
-
-.benefit-card h3 {
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.benefit-card p {
+.section-intro {
+    font-family: 'Montserrat', sans-serif;
     color: #666;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.application-form {
-    background-color: #fff;
-    padding: 3rem;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .form-section {
-    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
 }
 
 .form-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    font-family: 'Playfair Display', serif;
 }
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .form-group input {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-family: 'Montserrat', sans-serif;
@@ -1370,86 +1340,99 @@ footer {
 }
 
 .form-group input:focus {
-    border-color: #c4a747;
     outline: none;
+    border-color: #c4a747;
 }
 
-.file-label {
+.submit-button {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    border: 1px dashed #c4a747;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(45deg, #c4a747, #b3963a);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
     border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 2rem auto;
+    width: 200px;
 }
 
-.file-label:hover {
-    background-color: rgba(196, 167, 71, 0.1);
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.file-label input[type="file"] {
-    display: none;
+.submit-button i {
+    font-size: 1rem;
 }
 
-.privacy-notice {
-    background-color: #f8f8f8;
-    padding: 2rem;
-    border-radius: 8px;
+/* Benefits Grid Styles */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin: 3rem 0;
 }
 
-.privacy-notice h3 {
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: #c4a747;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
     color: #333;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.privacy-notice h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .privacy-notice ul {
-    list-style: none;
-    margin-bottom: 1.5rem;
-}
-
-.privacy-notice li {
+    font-family: 'Montserrat', sans-serif;
     color: #666;
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.privacy-notice li:before {
-    content: "•";
-    color: #c4a747;
-    position: absolute;
-    left: 0;
-}
-
-.consent-checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.consent-checkbox input[type="checkbox"] {
-    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .consent-checkbox label {
+    font-family: 'Montserrat', sans-serif;
     color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .application-form {
-        padding: 2rem;
-    }
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
