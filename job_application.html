@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application - Avicave</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AVICAVE</div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#services">SERVICES</a></li>
+                <li><a href="index.html#jobs">JOBS</a></li>
+                <li><a href="index.html#clients">CLIENTS</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/_avicave_"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="application-section">
+        <div class="application-container">
+            <div class="section-header">
+                <h2>Job Application</h2>
+                <p class="section-intro">Take the next step in your career journey with Avicave</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Exclusive Opportunities</h3>
+                    <p>Access to premium job listings from top companies</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Industry Partnerships</h3>
+                    <p>Connect with leading organizations across sectors</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-compass"></i>
+                    <h3>Career Guidance</h3>
+                    <p>Professional advice for your career growth</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Personalized Matching</h3>
+                    <p>Find roles that align with your skills and goals</p>
+                </div>
+            </div>
+
+            <form id="jobApplicationForm" class="application-form">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Required Documents</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" placeholder="PAN Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resume" class="file-label">
+                                <i class="fas fa-upload"></i>
+                                Upload Resume (PDF)
+                                <input type="file" id="resume" accept=".pdf" required>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="privacy-notice">
+                    <h3><i class="fas fa-shield-alt"></i> Privacy & Data Protection</h3>
+                    <ul>
+                        <li>Your data is encrypted and stored securely</li>
+                        <li>Information shared only with your consent</li>
+                        <li>Professional handling by our recruitment team</li>
+                        <li>Strict confidentiality of all documents</li>
+                    </ul>
+                    <div class="consent-checkbox">
+                        <input type="checkbox" id="privacy-consent" required>
+                        <label for="privacy-consent">I agree to the processing of my data and accept the privacy policy</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">AVICAVE</div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/_avicave_"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span class="divider">|</span>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Avicave Infosolutions Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
